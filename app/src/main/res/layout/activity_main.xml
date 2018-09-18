@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#E8EAF6">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#AD1457"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java Quiz" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q.1) Which of the below are reserved keyword in java?" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:textColor="#3F51B5"
+            android:textStyle="italic"
+            android:id="@+id/questionOneA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="array"
+            android:onClick="rbClick"/>
+
+        <RadioButton
+            android:onClick="rbClick"
+            android:textStyle="italic"
+            android:textColor="#3F51B5"
+            android:id="@+id/questionOneB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="null" />
+
+        <RadioButton
+            android:onClick="rbClick"
+            android:textStyle="italic"
+            android:textColor="#3F51B5"
+            android:id="@+id/questionOneC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="goto" />
+
+        <RadioButton
+            android:onClick="rbClick"
+            android:textStyle="italic"
+            android:textColor="#3F51B5"
+            android:id="@+id/questionOneD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="int" />
+    </RadioGroup>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q.2) Which of the following statement(s) are true for java?" />
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:onClick="rbClick2"
+            android:textStyle="italic"
+            android:textColor="#3F51B5"
+            android:id="@+id/questionTwoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="JVM is responsible to converting Byte code to the machine specific code." />
+
+        <RadioButton
+            android:onClick="rbClick2"
+            android:textStyle="italic"
+            android:textColor="#3F51B5"
+            android:id="@+id/questionTwoB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="We only need JRE to run java programs. " />
+
+        <RadioButton
+            android:onClick="rbClick2"
+            android:textStyle="italic"
+            android:textColor="#3F51B5"
+            android:id="@+id/questionTwoC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="JDK is required to compile java programs." />
+
+        <RadioButton
+            android:onClick="rbClick2"
+            android:textStyle="italic"
+            android:textColor="#3F51B5"
+            android:id="@+id/questionTwoD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="JRE doesn't contains JVM. " />
+    </RadioGroup>
+
+    <Button
+        android:layout_margin="15dp"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    <TextView
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#00695C"
+        android:visibility="invisible"
+        android:background="@drawable/border_curve_transperent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="" />
+</LinearLayout>
